@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>
+            DanielD | Portafolio
+        </title>
+        <link rel="icon" type="image/ico" href="../imagenes/favicon/favicon.png">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="estilos.css">
+    </head>
+    <body>
+      <header>
+          <div id="logo"><img src="../imagenes/logo-transp.gif" alt="Logo Daniel Díaz"></div>
+          <div class="navegador">
+              <nav>
+                  <ul class="horizontal">
+                      <li><a href="../index.html"><span>Inicio</span></a></li>
+                      <li><a href="../galeria/portfolio.html"><span>Galería</span></a></li>
+                      <li><a href="#" class="active"><span>Presupuesto</span></a></li>
+                      <li><a class="borde-derecho" href="../contacto/contacto.html"><span>Contacto</span></a></li>
+                  </ul>
+              </nav>
+          </div>
+      </header>
+      <main>
+         <form name="formulario" id="formulario" action="https://formspree.io/f/xnjbbkal" method="post" target="_blank" autocomplete="on">
+             <p class="solicitarPresupuesto">
+               Si necesitas un presupuesto a medida o simplemente quieres saludar, rellena el formulario y te responderé lo antes posible.
+             </p>
+             <div class="grupoFormulario">
+                 <label for="nombre">Nombre:</label>
+                 <input type="text" id="nombre" name="nombre" value="" size="25" required>
+             </div>
+             <div class="grupoFormulario">
+                 <label for="email">Email:</label>
+                 <input type="email" id="email" name="email" value="" size="25" required>
+             </div>
+             <div class="grupoFormulario">
+                 <label for="telefono">Teléfono:</label>
+                 <input type="tel" id="telefono" name="telefono" value="" size="15" placeholder="+3465656565" required>
+             </div>
+             <div class="grupoFormulario">
+                 <label for="informacion">Solicita más información:</label>
+                 <textarea name="informacion" id="informacion" rows="6" cols="60" required></textarea>
+             </div>
+             <div class="checkbox">
+                 <input type="checkbox" id="checkbox" name="checkbox" value="" required>
+                 <label for="checkbox">Acepto la política de privacidad.</label>
+             </div>
+             <input class="enviar" type="submit" id="enviar" name="enviar" value="Enviar">
+         </form>
+      </main>
+      <footer>        
+         <div class="contenedor-redes">
+             <a href="mailto:eddg22.2015@gmail.com" target="_blank"><img src="../imagenes/icon-gmail.png" alt="Icono de Gmail"></a>
+             <a href="https://wa.me/34641228587" target="_blank"><img src="../imagenes/icon-whatsapp.png" alt="Icono de WhatsApp"></a>
+             <a href="https://www.facebook.com/eberthdan" target="_blank"><img src="../imagenes/icon-facebook.png" alt="Icono de Facebook"></a>
+             <a href="https://www.instagram.com/danieldg93" target="_blank"><img src="../imagenes/icon-instagram.png" alt="Icono de Instagram"></a>
+         </div>
+         <p class="direccion">Madrid, España</p>
+         <nav>
+             <a href="../index.html">Inicio</a>
+             <a href="../galeria/portfolio.html">Galería</a>
+             <a href="../contacto/contacto.html">Contacto</a>
+         </nav>
+         <div id="copyright"><p>| Copyrigth© by Daniel Díaz |</p></div>    
+      </footer>
+    </body>
+</html>

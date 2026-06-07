@@ -1,0 +1,299 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #edede5;
+}
+
+/* Logotipo principal centro arriba del navegador */
+div#logo {
+    text-align: center;
+}
+
+div#logo img {
+    width: 112px;
+    height: 112px;
+}
+
+/* Navegador fijo en el centro con bordes */
+div.navegador {
+    position: relative;
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    margin-top: 0.5%;
+}
+
+div.navegador nav {
+    position: static;
+}
+
+div.navegador nav ul.horizontal {
+    display: flex;
+    justify-content: center;
+    background-color: #233347;
+    border: 1px solid #b4b4b4;
+    list-style: none;
+    padding: 0;
+    border-radius: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    min-width: 250px;
+    box-shadow: 0px 0px 0.8px 0.8px #adacac;
+}
+
+nav ul.horizontal li {
+    flex: 1;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.8em;
+}
+
+nav ul.horizontal li a {
+    color: white;
+    display: block;
+    padding: 0.5em;
+    text-decoration: none;
+    border-right: 1px solid #b4b4b4;
+}
+
+nav ul.horizontal li a.borde-derecho {
+    border-right: none;
+}
+
+/* Resalta al pasar el mouse sobre otra página en el navegador*/
+nav ul.horizontal li a:hover {
+    background-color: #466182;
+    
+    text-shadow: #000000;
+}
+
+/* Resaltando la página actual */
+.active {
+    background-color: #466182 ;
+}
+
+/* Contenedor padre de toda la galería */
+div#contenedorPadre {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 2%;
+    margin-left: 2%;
+}
+
+/* Contenedor de cada fotografía */
+.contenedor {
+    width: 10%;
+    margin-top: 5%;
+    padding: 0 5px;  
+}
+
+/* Sombreado de cada contenedor de cada fotografía */
+div.galeria {
+    box-shadow: 0px 4px 3px 0 rgb(0, 0, 0, 0.2), 0px 4px 3px 0 rgb(0, 0, 0, 0.2);
+}
+
+div.galeria img {
+    width: 100%;
+    height: 200px;
+}
+
+div.descripcion p {
+    height: 30px;
+    padding: 10px;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+/* Reset en caso de que se use algún float y que no afecte al footer */
+div.ultimo {
+    margin-bottom: 5%;
+    clear: both;
+}
+
+/* Pie de página con íconos de redes sociales, un nav para dirigirse a las demás páginas del sitio, ubicación y derechos de autor */
+footer {
+    background-color: #233347;
+    height: 200px;
+    position: relative;
+    margin: 0;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+div.contenedor-redes {
+    position: absolute;
+    top: 10%;
+    left: 2%;
+    display: flex;
+    gap: 10px;
+}
+
+div.contenedor-redes img {
+    width: 40px;
+}
+
+div.contenedor-redes a {
+    text-decoration: none;
+    color: #ccc;
+}
+
+p.direccion {
+    position: absolute;
+    top: 40%;
+    left: 2%;
+    color: #ccc;
+}
+
+footer nav {
+    position: absolute;
+    top: 10%;
+    right: 15%;
+    display: flex;
+    gap: 15px;
+}
+
+footer nav a {
+    
+    color: #ccc;
+    font-size: 1.2em;
+}
+
+#copyright {
+    position: absolute;
+    bottom: 10%;
+    left: 2%;
+}
+
+#copyright p {
+    color: #ccc;
+    font-size: 0.8em;
+    margin: auto;
+}
+
+/* Responsive para adaptar algunos elementos a pantallas más pequeñas o pantallas muy grandes */
+@media (min-width: 320px) and (max-width: 767px) {
+    div#contenedorPadre {
+        display: unset;
+    }
+
+    .contenedor {
+        width: 42%;
+        margin-top: 5%;
+        margin-left: 10px;
+        padding: 0 5px;
+        float: left;
+    }
+
+    div.galeria img {
+        width: 100%;
+        height: 250px;
+    }
+
+    footer {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div.contenedor-redes {
+        position: static;
+        margin: 10px 0;
+    }
+
+    p.direccion {
+        position: static;
+        margin: 10px 0;
+    }
+
+    footer nav {
+        position: static;
+        margin: 10px 0;
+    }
+
+    #copyright {
+        position: static;
+        margin: 10px 0 30px;
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    div#contenedorPadre {
+        display: unset;
+    }
+    .contenedor {
+        width: 20%;
+        margin-top: 5%;
+        margin-left: 20px;
+        padding: 0 5px;
+        float: left;
+    }
+
+    div.galeria img {
+        width: 100%;
+        height: 250px;
+    }
+}
+
+@media (min-width: 2560px) {
+    div#logo img {
+        width: 260px;
+        height: 260px;
+    }
+
+    div.navegador {
+        margin-top: 0.7%;
+    }
+
+    div.navegador nav ul.horizontal {
+        box-shadow: 0px 0px 1.2px 1.2px #adacac;
+    }
+
+    nav ul.horizontal li {
+        font-size: 1.2em;
+    }
+
+    nav ul.horizontal li a {
+        padding: 0.8em;
+    }
+
+    .contenedor {
+        width: 10%;
+        margin-top: 5%;
+        margin-left: 20px;
+        padding: 0 10px;
+        float: left;
+    }
+
+    div.galeria img {
+        width: 100%;
+        height: 350px;
+    }
+
+    div.descripcion p {
+        height: 50px;
+        font-size: 1.3em;
+    }
+
+    footer {
+        height: 350px;
+    }
+
+    #copyright p {
+        font-size: 1.5em;
+    }
+
+    p.direccion {
+        font-size: 1.7em;
+    }
+}
