@@ -1,0 +1,12 @@
+Copyright (c) 2026 [Eberth Daniel Díaz Gómez]. Todos los derechos reservados.
+
+1. PROPIEDAD INTELECTUAL DEL LOGOTIPO E IDENTIDAD VISUAL
+El logotipo, isotipo, imagotipo, esquema de colores, elementos de diseño gráfico, 
+fotografías de autoría y combinación de los mismos incluidos en este repositorio 
+y sitio web son propiedad exclusiva del autor y están protegidos por las leyes 
+internacionales de derechos de autor y propiedad industrial.
+
+2. RESTRICCIONES DE USO
+Queda estrictamente prohibida la copia, reproducción, imitación, distribución, 
+modificación, comunicación pública o uso comercial o no comercial del logotipo 
+y del material fotográfico sin el consentimiento previo, expreso y por escrito del titular.
